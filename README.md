@@ -7,7 +7,7 @@ https://dmarchena.github.io/oojs-slides/
 
 ## Ejemplos
 
-`samples` folder contains:
+En la carpeta `samples` se encuentran los ejemplos del final de la charla:
 
 1. Literal object
 2. Constructor
