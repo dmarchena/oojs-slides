@@ -1,0 +1,13 @@
+{
+  "name": "slides",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "reveal-md slides.md --static docs --static-dirs=assets",
+    "start": "./node_modules/.bin/reveal-md -w slides.md "
+  },
+  "devDependencies": {
+    "reveal-md": "^2.0.5"
+  }
+}

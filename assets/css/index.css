@@ -1,0 +1,95 @@
+.reveal {
+  background-color: #f7df1e;
+  color: #000;
+}
+.reveal h1, 
+.reveal h2, 
+.reveal h3, 
+.reveal h4, 
+.reveal h5, 
+.reveal h6 {
+  color: inherit;
+}
+
+.reveal h1 {
+  font-size: 2.5em;
+}
+
+.reveal section img {
+  background: none;
+  box-shadow: unset;
+  border: none;
+}
+
+.over-right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 45%;
+}
+.over-left {
+  position: absolute;
+  top: 5%;
+  left: 3%;
+  right: 75%;
+}
+
+.reveal .h-hierarchy {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.reveal .h-hierarchy__parent,
+.reveal .h-hierarchy__nodes {
+  flex: 1 1 50%;
+  margin: 0;
+}
+
+.reveal .h-hierarchy__nodes {
+  /* border-left: 2px solid currentColor; */
+  list-style-position: inside;
+  padding-left: 40px;
+}
+
+.reveal .square-grid {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
+.reveal .square-grid > * {
+  position: relative;
+  font-family: "League Gothic", Impact, sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+  flex: 1 1 50%;
+  padding: 10% 0;
+}
+.reveal .square-grid > :nth-child(even) {
+  order: 1;
+}
+.reveal .square-grid > :nth-child(even)::before {
+  content:'';
+  display: block;
+  position: absolute;
+  border: 1em transparent solid;
+  border-bottom: none;
+  border-top-color: #000;
+  height: 0;
+  width: 0;
+  font-size: 20px;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -50%);
+}
+
+.reveal .square-grid small {
+  display: block;
+  font-size: .5em;
+  position: absolute;
+  bottom: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+}
